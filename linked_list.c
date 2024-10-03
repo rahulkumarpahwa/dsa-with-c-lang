@@ -29,4 +29,7 @@ second -> next = third;
 third -> data = 22;
 third-> next = NULL;
 
+
+linkedlistTraversal(head);
+
 }
