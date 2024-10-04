@@ -22,15 +22,42 @@ struct Node * linkedListInsertionAtBegin( struct Node * ptr, struct Node * p){
 
 
 // case 2: insert in between the linked list.
-void linkedListInsertionBetween(struct Node * ptr, struct Node * p, int i){
-// struct Node * k = (struct Node *) malloc (sizeof(struct Node));
-for(int j = 0; j<=i ; j++){
-  ptr = ptr->next;
+struct Node * linkedListInsertionBetween(struct Node * head, int i, int data){
+struct Node * p = (struct Node *) malloc (sizeof(struct Node));
+ p->data = data;
+struct Node * k = head;
+int j;
+for (j=0 ; j != i-1; j++){
+  k = k->next;
 }
-p->next = ptr->next;
-ptr->next = p;
+p->next = k->next;
+k->next = p;
+return head;
 }
 
+//case 3: insert at the end.
+struct Node * linkedListInsertionEnd(struct Node * head , int data){
+
+struct Node * p = (struct Node *) malloc (sizeof(struct Node));
+ p->data = data;
+struct Node * k = head;
+while (k->next != NULL){
+  k = k->next;
+}
+k->next = p;
+p->next = NULL;
+return head;
+}
+
+
+//case 4: insert after given Node in the linked list.
+struct Node * linkedListInsertionNode(struct Node * head, struct Node * ptr, int data){
+struct Node * p = (struct Node *) malloc (sizeof(struct Node));
+p->data = data;
+p->next = ptr->next;
+ptr->next = p;
+return head;
+}
 
 
 void main(){
@@ -58,12 +85,13 @@ head = linkedListInsertionAtBegin(head , p);
 
 
 // case 2: insert in between the linked list.
-linkedListInsertionBetween(head , p , 3); // arguments are the head, the node we want to add and the index after which we want to insert.
+head = linkedListInsertionBetween(head , 2, 16); // arguments are the head, the index after we add and data we add.
 
 //case 3: insert at the end.
+head = linkedListInsertionEnd(head, 34 ); // arguments are the head and the data we add.
 
 //case 4: insert after given Node in the linked list.
-
+head = linkedListInsertionNode(head, second, 78); // arguments are the head, given node and data.
 
 // to show the linked list
 linkedListTraversal(head);
