@@ -23,7 +23,29 @@ void linkedListTraversal( struct Node * head ){
 // printf("Element : %d\n", p->data);
 }
 
-//case 1: Insertion In Between 
+// case 1: insertion at the begin / start
+struct Node * linkedListInsertStart(struct Node * head, int data){
+struct Node * p = head; 
+struct Node * ptr = (struct Node *) malloc (sizeof(struct Node));
+ptr -> data = data;
+
+// do {
+//   p= p->next;
+// } while (p->next != head);
+
+// or 
+
+while(p->next != head){
+  p = p->next;
+}
+
+p->next = ptr;
+ptr->next = head;
+return ptr;
+}
+
+
+//case 2: Insertion In Between 
 struct Node * linkedListInsertion(struct Node * head, int index , int data){
 struct Node * p = head;
 struct Node * q = (struct Node *) malloc (sizeof(struct Node));
@@ -37,10 +59,6 @@ p->next = q;
 
 return head;
 }
-
-
-// 
-
 
 
 void main(){
@@ -61,8 +79,9 @@ third -> next = head; // connecting the last node to the head.
 
 
 //case 1: Insertion In Between 
-head = linkedListInsertion(head, -1, 33); // head, index and value
+// head = linkedListInsertion(head, 2, 33); // head, index and value
 
+head = linkedListInsertStart(head , 444);
 
 linkedListTraversal(head);
 
