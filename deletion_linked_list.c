@@ -51,6 +51,25 @@ struct Node * deleteAtEnd(struct Node * head){
 }
 
 
+// case 4: deletion at first node with the given value.
+struct Node * deletionAtValue(struct Node * head, int value){
+struct Node * p = head;
+struct Node * q = head->next;
+
+while (q->data != value && q->next != NULL ){
+q= q->next;
+p= p->next;
+}
+if(q->data == value){
+p-> next = q->next;
+free(q);
+}
+
+return head;
+}
+
+
+
 void main(){
 
 // allocating memory for the nodes in the heap
@@ -68,13 +87,16 @@ third -> data = 22;
 third -> next = NULL;
 
 // case 1: deletion at the start 
-// head = deletionAtStart(head);
+head = deletionAtStart(head);
 
 // case 2: deletion in between 
-// head = deletionInBetween(head , 2); // head and index at which we want delete starting from 0.
+head = deletionInBetween(head , 2); // head and index at which we want delete starting from 0.
 
 // case 3: delete at the end.
 head = deleteAtEnd(head);
+
+// case 4: deletion at first node with the given value.
+head = deletionAtValue(head, 22);
 
 linkedListTraversal(head);
 }
