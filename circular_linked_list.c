@@ -50,14 +50,26 @@ struct Node * linkedListInsertion(struct Node * head, int index , int data){
 struct Node * p = head;
 struct Node * q = (struct Node *) malloc (sizeof(struct Node));
 q->data = data;
-
 for (int i = 0 ; i < index ; i++){
 p = p->next;
 }
 q->next = p->next;
 p->next = q;
-
 return head;
+}
+
+
+// case 3: deletion at the start:
+struct Node * deleteAtStart(struct Node * head){
+struct Node * p = head;
+struct Node * q = head->next;
+
+while (q->next != head){
+q=q->next;
+}
+q-> next = p->next;
+free(p);
+return q->next;
 }
 
 
@@ -79,11 +91,12 @@ third -> next = head; // connecting the last node to the head.
 
 
 //case 1: Insertion In Between 
-// head = linkedListInsertion(head, 2, 33); // head, index and value
+head = linkedListInsertion(head, 2, 33); // head, index and value
 
-head = linkedListInsertStart(head , 444);
+head = linkedListInsertStart(head , 444); // head and the value
+
+head = deleteAtStart(head);
 
 linkedListTraversal(head);
-
 
 }
