@@ -74,10 +74,9 @@ void main()
     push(s, 56);
     push(s, 56);
     push(s, 56);
-    // push(s, 996);
+    // push(s, 996); // value overflow at this value addition as size is 9.
 
-
-    // printf("value %d is removed from the stack\n" , pop(s));
+    printf("value %d is removed from the stack\n", pop(s));
 
     if (isEmpty(s))
     {
