@@ -72,17 +72,16 @@ void main()
     push(s, 56);
     push(s, 56);
     push(s, 56);
-    // push(s, 56);
     push(s, 56);
-    push(s, 996);
+    push(s, 56);
+    // push(s, 996);
+
+
+    // printf("value %d is removed from the stack\n" , pop(s));
 
     if (isEmpty(s))
     {
         printf("stack is underflow\n");
-    }
-    else if (!isEmpty(s))
-    {
-        printf("stack is not empty\n");
     }
     else if (isFull(s))
     {
