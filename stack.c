@@ -22,7 +22,7 @@ int isEmpty(struct Stack *ptr)
 
 int isFull(struct Stack *ptr)
 {
-    if (ptr->top == ptr->size)
+    if (ptr->top == ptr->size-1) // minus one because index start with zero.
     {
         return 1;
     }
@@ -40,12 +40,11 @@ void main()
     {
         printf("stack is underflow\n");
     }
-    else
+    else if(!isEmpty(s))
     {
         printf("stack is not empty\n");
     }
-
-    if (isFull(s))
+    else if (isFull(s))
     {
         printf("stack is overflow\n");
     }
