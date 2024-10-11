@@ -26,4 +26,9 @@ B. Stack.
 B. Stack.
 
 1. operations on stack with linkedlist such push, pop, peek and stackTop.
-2. Parenthesis Matching Problem.
+2. Parenthesis Matching Problem with stack (application of stack)
+3. Multiple Parenthesis Matching with stack.
+4. Infix, Prefix and PostFix.
+
+C. Queue.
+1. Queue.
