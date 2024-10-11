@@ -17,13 +17,13 @@ B. Stack.
 
 1. stack creation with arrays and isEmpty and isFull method implementation of constraints.
 2. stack methods such as pop, push and others.
+3. stack methods such as peek with array.
 
 ## Topics to be covered:
 
 B. Stack.
-
-1. stack methods such as peek with array.
-2. other operations with stack on array.
-3. stack with linked list.
-4. operations on stack with linkedlist such peek and stackTop.
-5. Parenthesis Matching Problem.
+ 
+1. other operations with stack on array such as stacktop and stackbottom.
+2. stack with linked list.
+3. operations on stack with linkedlist such peek and stackTop.
+4. Parenthesis Matching Problem.
