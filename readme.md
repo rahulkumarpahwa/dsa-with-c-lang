@@ -19,11 +19,11 @@ B. Stack.
 2. stack methods such as pop, push and others.
 3. stack methods such as peek with array.
 4. other operations with stack on array such as stacktop and stackbottom.
+5. stack with linked list and isEmpty and isFull method.
 
 ## Topics to be covered:
 
 B. Stack.
 
-1. stack with linked list and isEmpty and isFull method.
-2. operations on stack with linkedlist such peek and stackTop.
-3. Parenthesis Matching Problem.
+1. operations on stack with linkedlist such push, pop, peek and stackTop.
+2. Parenthesis Matching Problem.
