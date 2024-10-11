@@ -56,15 +56,18 @@ int pop(struct Stack *ptr)
     }
 }
 
-int peek(struct Stack *ptr, int i){
-if(ptr->top -i +1 < 0){
-    printf("Invalid position %d\n", i);
-    return -1;
-} else{
-    return ptr->arr[ptr->top -i +1];
+int peek(struct Stack *ptr, int i)
+{
+    if (ptr->top - i + 1 < 0)
+    {
+        printf("Invalid position %d\n", i);
+        return -1;
+    }
+    else
+    {
+        return ptr->arr[ptr->top - i + 1];
+    }
 }
-}
-
 
 void main()
 {
@@ -85,6 +88,11 @@ void main()
     push(s, 56);
     push(s, 56);
 
+    // push(s, 996); // value overflow at this value addition as size is 9.
+
+    // poping out
+    printf("value %d is removed from the stack\n", pop(s)); // LIFO
+
     if (isEmpty(s))
     {
         printf("stack is underflow\n");
@@ -98,9 +106,8 @@ void main()
         printf("stack is not full\n");
     }
 
-
-  for(int j =1; j<= s->top+1; j++ ){
-    printf("%d Element is at %d Position\n", peek(s, j), j );
-  }
-
+    for (int j = 1; j <= s->top + 1; j++)
+    {
+        printf("%d Element is at %d Position\n", peek(s, j), j);
+    }
 }

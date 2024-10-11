@@ -22,7 +22,7 @@ int isEmpty(struct Stack *ptr)
 
 int isFull(struct Stack *ptr)
 {
-    if (ptr->top == ptr->size - 1)
+    if (ptr->top == ptr->size - 1) // minus one because index start with zero.
     {
         return 1;
     }
@@ -56,27 +56,48 @@ int pop(struct Stack *ptr)
     }
 }
 
+int peek(struct Stack *ptr, int i)
+{
+    if (ptr->top - i + 1 < 0)
+    {
+        printf("Invalid position %d\n", i);
+        return -1;
+    }
+    else
+    {
+        return ptr->arr[ptr->top - i + 1];
+    }
+}
+
+//topmost element of stack 
+int stackTop (struct Stack * ptr){
+ return ptr->arr[ptr->top];
+}
+
+
+//bottommost element of stack
+int stackBottom(struct Stack * ptr){
+    return ptr->arr[0];
+}
+
 void main()
 {
     struct Stack *s = (struct Stack *)malloc(sizeof(struct Stack));
-    s->size = 9;
+    s->size = 80;
     s->top = -1;
     s->arr = (int *)malloc(sizeof(int) * s->size);
 
     // push the elements:
+    push(s, 5446);
+    push(s, 56);
+    push(s, 756);
+    push(s, 56);
+    push(s, 67);
+    push(s, 569);
+    push(s, 596);
     push(s, 56);
     push(s, 56);
     push(s, 56);
-    push(s, 56);
-    push(s, 56);
-    push(s, 56);
-    push(s, 56);
-    push(s, 56);
-    push(s, 56);
-    push(s, 56);
-    // push(s, 996); // value overflow at this value addition as size is 9.
-
-    printf("value %d is removed from the stack\n", pop(s)); //LIFO
 
     if (isEmpty(s))
     {
@@ -90,4 +111,12 @@ void main()
     {
         printf("stack is not full\n");
     }
+
+    for (int j = 1; j <= s->top + 1; j++)
+    {
+        printf("%d Element is at %d Position\n", peek(s, j), j);
+    }
+
+    printf("Top most Element is %d\n", stackTop(s));
+    printf("Bottom Most Element is %d\n", stackBottom(s));
 }
