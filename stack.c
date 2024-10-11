@@ -35,14 +35,10 @@ void main()
     s->size = 80;
     s->top = -1;
     s->arr = (int *)malloc(sizeof(int) * s->size);
-
+    
     if (isEmpty(s))
     {
         printf("stack is underflow\n");
-    }
-    else if(!isEmpty(s))
-    {
-        printf("stack is not empty\n");
     }
     else if (isFull(s))
     {
