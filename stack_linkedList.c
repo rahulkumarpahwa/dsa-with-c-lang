@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node
+struct Stack
 {
     int data;
-    struct Node *next;
+    struct Stack *next;
 };
 
-int isEmpty(struct Node *top)
+int isEmpty(struct Stack *top)
 {
     if (top == NULL)
     {
@@ -18,7 +18,7 @@ int isEmpty(struct Node *top)
 
 int isFull()
 {
-    struct Node *n = (struct Node *)malloc(sizeof(struct Node));
+    struct Stack *n = (struct Stack *)malloc(sizeof(struct Stack));
     if (n == NULL)
     {
         return 1;
@@ -31,8 +31,8 @@ int isFull()
 
 void main()
 {
-    struct Node * top = (struct Node *)malloc(sizeof(struct Node));
-    top = NULL;
+    struct Stack * top = (struct Stack *)malloc(sizeof(struct Stack));
+    top = NULL; // to make the top NULL
 
     if (isEmpty(top))
     {
