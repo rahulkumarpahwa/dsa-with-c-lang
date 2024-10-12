@@ -20,16 +20,16 @@ B. Stack.
 3. stack methods such as peek with array.
 4. other operations with stack on array such as stacktop and stackbottom.
 5. stack with linked list and isEmpty and isFull method.
+6. operations on stack with linkedlist such push, pop and stackTraversal.
 
 ## Topics to be covered:
 
 B. Stack.
 
-1. operations on stack with linkedlist such push, pop and stackTraversal.
-2. other operations on stack with linkedlist such as peek, stackop and stackbottom.
-3. Parenthesis Matching Problem with stack (application of stack)
-4. Multiple Parenthesis Matching with stack.
-5. Infix, Prefix and PostFix.
+1. other operations on stack with linkedlist such as peek, stackop and stackbottom.
+2. Parenthesis Matching Problem with stack (application of stack)
+3. Multiple Parenthesis Matching with stack.
+4. Infix, Prefix and PostFix.
 
 C. Queue.
 1. Queue.
