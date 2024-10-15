@@ -26,11 +26,14 @@ B. Stack.
 9. Multiple Parenthesis Matching with stack.
 10. Infix to Postfix with stack.
 
+C. Queue.
+
+1. Queue implementation using arrays and methods like isEmpty, isFull, enqueue and dequeue.
+
 ## Topics to be covered:
 
 C. Queue.
 
-1. Queue implementation using arrays.
-2.
+1. other operations.
 
 D. Arrays.
