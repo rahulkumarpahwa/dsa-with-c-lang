@@ -24,15 +24,13 @@ B. Stack.
 7. other operations on stack with linkedlist such as peek, stacktop and stackbottom.
 8. Parenthesis Matching Problem with stack (application of stack).
 9. Multiple Parenthesis Matching with stack.
+10. Infix to Postfix with stack.
 
 ## Topics to be covered:
 
-B. Stack.
-
-1. Infix to Postfix with stack.
-
 C. Queue.
 
-1. Queue.
+1. Queue implementation using arrays.
+2.
 
 D. Arrays.
