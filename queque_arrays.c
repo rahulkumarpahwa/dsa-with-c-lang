@@ -42,6 +42,7 @@ void Enqueue(struct Queue *q, int val)
 
 int Dequeue(struct Queue *q)
 {
+    int a = -1;
     if (isEmpty(q))
     {
         printf("Queue underflow, can't remove! \n");
@@ -49,7 +50,9 @@ int Dequeue(struct Queue *q)
     else
     {
         q->f++;
+        a = q->arr[q->f];
     }
+    return a;
 }
 
 void main()
@@ -88,7 +91,9 @@ void main()
         printf("Queque is not empty not full\n");
     }
 
-    Dequeue(q);
+    printf("Value removed is : %d\n", Dequeue(q));
+
+
     if (isFull(q))
     {
         printf("Queque is Overflow\n");
