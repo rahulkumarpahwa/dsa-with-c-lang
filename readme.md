@@ -34,6 +34,6 @@ C. Queue.
 
 C. Queue.
 
-1. other operations.
+1. other operations like traversal.
 
 D. Arrays.

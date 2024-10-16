@@ -53,6 +53,13 @@ int Dequeue(struct Queue *q)
         a = q->arr[q->f];
     }
     return a;
+} 
+
+void queueTraversal( struct Queue *q){
+    for(int i = q->f+1; i<=q->r; i++){ // f start from the one index before the initial index of array.
+        printf("Element: %d\n", q->arr[i]);
+    }
+
 }
 
 void main()
@@ -76,7 +83,10 @@ void main()
         printf("Queque is not empty not full\n");
     }
 
-    Enqueue(q, 23); // entering new element at last.
+    Enqueue(q, 231);
+    Enqueue(q, 233);
+    Enqueue(q, 234);
+    Enqueue(q, 243);
 
     if (isFull(q))
     {
@@ -91,8 +101,7 @@ void main()
         printf("Queque is not empty not full\n");
     }
 
-    printf("Value removed is : %d\n", Dequeue(q)); // removing element at the start.
- 
+    printf("Value removed is : %d\n", Dequeue(q));
 
     if (isFull(q))
     {
@@ -106,6 +115,8 @@ void main()
     {
         printf("Queque is not empty not full\n");
     }
+
+    queueTraversal(q);
 
     free(q); // to free memory.
 }
