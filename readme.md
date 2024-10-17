@@ -29,11 +29,13 @@ B. Stack.
 C. Queue.
 
 1. Queue implementation using arrays and methods like isEmpty, isFull, enqueue and dequeue.
+2. Circular Queue implementation using arrays and methods like isEmpty, isFull, enqueue and dequeue.
 
 ## Topics to be covered:
 
 C. Queue.
 
-1. other operations like traversal.
+1. Queue using Linked List.
+2. DE-Queue (Double ended Queue using Linked List).
 
 D. Arrays.
