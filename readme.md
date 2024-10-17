@@ -38,4 +38,10 @@ C. Queue.
 1. Queue using Linked List.
 2. DE-Queue (Double ended Queue using Linked List).
 
-D. Arrays.
+D. Sorting Alogrithms.
+1. Bubble sort.
+2. Insertion sort.
+3. Selection sort.
+4. Quick sort.
+5. Merge sort.
+6. count sort.
