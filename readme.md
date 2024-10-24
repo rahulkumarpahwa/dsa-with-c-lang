@@ -9,6 +9,7 @@ A. Arrays.
 1. arrays creation and traversal.
 2. insertion arrays with 2 cases.
 3. deletion arrays with 2 cases.
+4. merging of arrays both sorted and un-sorted.
 
 B. Linked List.
 
@@ -42,11 +43,7 @@ E. Sorting Alogrithms.
 
 ## Topics to be covered:
 
-A. Arrays.
-1. merging of arrays both sorted and un-sorted.
-
 D. Queue.
-
 1. DE-Queue (Double Ended Queue using Linked List).
 
 E. Sorting Alogrithms.
