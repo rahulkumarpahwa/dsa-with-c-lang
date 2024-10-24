@@ -32,6 +32,9 @@ C. Queue.
 2. Circular Queue implementation using arrays and methods like isEmpty, isFull, enqueue and dequeue.
 3. Queue using Linked List.
 
+D. Sorting Alogrithms.
+1. Bubble sort.
+
 ## Topics to be covered:
 
 C. Queue.
@@ -39,7 +42,6 @@ C. Queue.
 1. DE-Queue (Double Ended Queue using Linked List).
 
 D. Sorting Alogrithms.
-1. Bubble sort.
 2. Insertion sort.
 3. Selection sort.
 4. Quick sort.
