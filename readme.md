@@ -5,7 +5,12 @@
 
 ## Topics covered till now:
 
-A. Linked List.
+A. Arrays.
+1. arrays creation and traversal.
+2. insertion arrays with 2 cases.
+3. deletion arrays with 2 cases.
+
+B. Linked List.
 
 1. linked list creation and traversal.
 2. insertion linked list with 4 cases.
@@ -13,7 +18,7 @@ A. Linked List.
 4. circular linked list with few cases.
 5. doubly linked list with few cases.
 
-B. Stack.
+C. Stack.
 
 1. stack creation with arrays and isEmpty and isFull method implementation of constraints.
 2. stack methods such as pop, push and others.
@@ -26,22 +31,25 @@ B. Stack.
 9. Multiple Parenthesis Matching with stack.
 10. Infix to Postfix with stack.
 
-C. Queue.
+D. Queue.
 
 1. Queue implementation using arrays and methods like isEmpty, isFull, enqueue and dequeue.
 2. Circular Queue implementation using arrays and methods like isEmpty, isFull, enqueue and dequeue.
 3. Queue using Linked List.
 
-D. Sorting Alogrithms.
+E. Sorting Alogrithms.
 1. Bubble sort.
 
 ## Topics to be covered:
 
-C. Queue.
+A. Arrays.
+1. merging of arrays both sorted and un-sorted.
+
+D. Queue.
 
 1. DE-Queue (Double Ended Queue using Linked List).
 
-D. Sorting Alogrithms.
+E. Sorting Alogrithms.
 2. Insertion sort.
 3. Selection sort.
 4. Quick sort.
