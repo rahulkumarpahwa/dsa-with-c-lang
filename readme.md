@@ -40,6 +40,7 @@ D. Queue.
 
 E. Sorting Alogrithms.
 1. Bubble sort.
+3. Selection sort.
 
 ## Topics to be covered:
 
@@ -48,7 +49,6 @@ D. Queue.
 
 E. Sorting Alogrithms.
 2. Insertion sort.
-3. Selection sort.
 4. Quick sort.
 5. Merge sort.
 6. count sort.
