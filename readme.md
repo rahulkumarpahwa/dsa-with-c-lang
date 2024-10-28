@@ -43,6 +43,7 @@ E. Sorting Alogrithms.
 2. Insertion sort.
 3. Selection sort.
 4. Quick sort.
+5. Merge sort.
 
 ## Topics to be covered:
 
@@ -50,6 +51,5 @@ D. Queue.
 1. DE-Queue (Double Ended Queue using Linked List).
 
 E. Sorting Alogrithms.
-5. Merge sort.
 6. count sort.
 7. Details about all sorting algos and analysis based on TC, SC, adaptibility, stability and Recursivity.
