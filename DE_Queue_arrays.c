@@ -98,7 +98,7 @@ void main()
 
     q->size = 100;
     q->f = q->r = -1;
-    q->arr = (int *)malloc(sizeof(int) * q->size);
+    q->arr = (int *)malloc(sizeof(int) * q->size); // other way : (*q).arr = (int *)malloc(sizeof(int) * q->size);
 
     // if (isFull(q))
     // {
@@ -153,6 +153,15 @@ void main()
     printf("Value removed is : %d\n", dequeueR(q));
 
     queueTraversal(q);
+
+
+
+
+
+
+
+
+
 
     free(q); // to free memory.
 }

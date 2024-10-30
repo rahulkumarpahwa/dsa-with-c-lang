@@ -53,3 +53,7 @@ D. Queue.
 
 E. Sorting Alogrithms.
 7. Details about all sorting algos and analysis based on TC, SC, adaptibility, stability and Recursivity.
+
+F. Trees.
+1. Binary Trees with linked List.
+2. Operations on Binary trees with LL.
