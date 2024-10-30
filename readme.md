@@ -52,6 +52,7 @@ D. Queue.
 1. DE-Queue (Double Ended Queue using Linked List).
 
 E. Sorting Alogrithms.
+
 7. Details about all sorting algos and analysis based on TC, SC, adaptibility, stability and Recursivity.
 
 F. Trees.
