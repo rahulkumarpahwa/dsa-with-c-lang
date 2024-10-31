@@ -1,4 +1,4 @@
-## command to run the files:
+## Command to Execute:
 
 1. gcc file_name
 2. ./a.exe
@@ -46,6 +46,9 @@ E. Sorting Alogrithms.
 5. Merge sort.
 6. count sort.
 
+F. Trees.
+1. Binary Trees with linked representation.
+
 ## Topics to be covered:
 
 D. Queue.
@@ -56,5 +59,4 @@ E. Sorting Alogrithms.
 7. Details about all sorting algos and analysis based on TC, SC, adaptibility, stability and Recursivity.
 
 F. Trees.
-1. Binary Trees with linked List.
-2. Operations on Binary trees with LL.
+2. Operations on Binary trees with Linked representation.
