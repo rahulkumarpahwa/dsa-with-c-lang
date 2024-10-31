@@ -48,6 +48,7 @@ E. Sorting Alogrithms.
 
 F. Trees.
 1. Binary Trees with linked representation.
+2. InOrder traversal in Binary Tree.
 
 ## Topics to be covered:
 
@@ -59,4 +60,4 @@ E. Sorting Alogrithms.
 7. Details about all sorting algos and analysis based on TC, SC, adaptibility, stability and Recursivity.
 
 F. Trees.
-2. Operations on Binary trees with Linked representation.
+3. Operations on Binary trees with Linked representation.
