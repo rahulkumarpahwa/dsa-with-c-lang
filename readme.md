@@ -48,7 +48,8 @@ E. Sorting Alogrithms.
 
 F. Trees.
 1. Binary Trees with linked representation.
-2. InOrder traversal in Binary Tree.
+2. preOrder traversal in Binary Tree.
+3. postOrder traversal in Binary Tree.
 
 ## Topics to be covered:
 
