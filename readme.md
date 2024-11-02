@@ -64,4 +64,7 @@ E. Sorting Alogrithms.
 
 F. Trees.
 
-3. Operations on Binary trees with Linked representation.
+5. Binary Search Tree.
+6. Search with Binary Search Tree.
+7. Interative Search with Binary Search Tree.
+8. Operations on Binary trees with Linked representation.
