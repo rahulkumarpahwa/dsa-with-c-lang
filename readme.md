@@ -51,6 +51,7 @@ F. Trees.
 1. Binary Trees with linked representation.
 2. preOrder traversal in Binary Tree.
 3. postOrder traversal in Binary Tree.
+4. inOrder traversal in Binary Tree.
 
 ## Topics to be covered:
 
