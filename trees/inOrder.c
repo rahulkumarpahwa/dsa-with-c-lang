@@ -8,13 +8,13 @@ struct Node
     struct Node *right;
 };
 
-void preOrder(struct Node *root)
+void inOrder(struct Node *root)
 {
     if (root != NULL)
     {
+        inOrder(root->left);
         printf("%d ", root->data);
-        preOrder(root->left);
-        preOrder(root->right);
+        inOrder(root->right);
     }
 }
 
@@ -45,5 +45,5 @@ void main()
     c2->data = 54;
     c2->left = c2->right = NULL;
 
-    preOrder(root);
+    inOrder(root);
 }
