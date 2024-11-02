@@ -18,6 +18,7 @@ B. Linked List.
 3. deletion linked list with 4 cases.
 4. circular linked list with few cases.
 5. doubly linked list with few cases.
+6. Search a value in linked list.
 
 C. Stack.
 
@@ -61,4 +62,5 @@ E. Sorting Alogrithms.
 7. Details about all sorting algos and analysis based on TC, SC, adaptibility, stability and Recursivity.
 
 F. Trees.
+
 3. Operations on Binary trees with Linked representation.
