@@ -59,6 +59,27 @@ ptr->next = p;
 return head;
 }
 
+//case 5: Insertion before a given node.
+struct Node *insertAtGivenNode(struct Node *head, int val, struct Node *given)
+{
+  struct Node *p = head;
+  struct Node *q = p->next;
+  struct Node *n = (struct Node *)malloc(sizeof(struct Node));
+  n->data = val;
+  if (n == NULL)
+  {
+    printf("Overflow, can't input");
+    return NULL;
+  }
+  while (p->next != given && q != NULL)
+  {
+    p = p->next;
+    q = q->next;
+  }
+  p->next = n;
+  n->next = q;
+  return head;
+}
 
 void main(){
 struct Node * head = (struct Node *) malloc (sizeof(struct Node)); 
@@ -81,17 +102,20 @@ struct Node * p = (struct Node *) malloc (sizeof(struct Node));
 
 
 // case 1 : insert at the beginning of the list.
-head = linkedListInsertionAtBegin(head , p);
+// head = linkedListInsertionAtBegin(head , p);
 
 
 // case 2: insert in between the linked list.
-head = linkedListInsertionBetween(head , 2, 16); // arguments are the head, the index after we add and data we add.
+// head = linkedListInsertionBetween(head , 2, 16); // arguments are the head, the index after we add and data we add.
 
 //case 3: insert at the end.
-head = linkedListInsertionEnd(head, 34 ); // arguments are the head and the data we add.
+// head = linkedListInsertionEnd(head, 34 ); // arguments are the head and the data we add.
 
 //case 4: insert after given Node in the linked list.
-head = linkedListInsertionNode(head, second, 78); // arguments are the head, given node and data.
+// head = linkedListInsertionNode(head, second, 78); // arguments are the head, given node and data.
+
+// case 5: Insertion before a given node.
+head = insertAtGivenNode(head, 99, second );
 
 // to show the linked list
 linkedListTraversal(head);
