@@ -102,17 +102,17 @@ struct Node * p = (struct Node *) malloc (sizeof(struct Node));
 
 
 // case 1 : insert at the beginning of the list.
-// head = linkedListInsertionAtBegin(head , p);
+head = linkedListInsertionAtBegin(head , p);
 
 
 // case 2: insert in between the linked list.
-// head = linkedListInsertionBetween(head , 2, 16); // arguments are the head, the index after we add and data we add.
+head = linkedListInsertionBetween(head , 2, 16); // arguments are the head, the index after we add and data we add.
 
 //case 3: insert at the end.
-// head = linkedListInsertionEnd(head, 34 ); // arguments are the head and the data we add.
+head = linkedListInsertionEnd(head, 34 ); // arguments are the head and the data we add.
 
 //case 4: insert after given Node in the linked list.
-// head = linkedListInsertionNode(head, second, 78); // arguments are the head, given node and data.
+head = linkedListInsertionNode(head, second, 78); // arguments are the head, given node and data.
 
 // case 5: Insertion before a given node.
 head = insertAtGivenNode(head, 99, second );
