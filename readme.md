@@ -52,6 +52,7 @@ F. Trees.
 2. preOrder traversal in Binary Tree.
 3. postOrder traversal in Binary Tree.
 4. inOrder traversal in Binary Tree.
+5. Binary Search Tree.
 
 ## Topics to be covered:
 
@@ -64,7 +65,6 @@ E. Sorting Algorithms.
 
 F. Trees.
 
-5. Binary Search Tree.
 6. Search with Binary Search Tree.
 7. Iterative Search with Binary Search Tree.
 8. Operations on Binary trees with Linked representation.
