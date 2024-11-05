@@ -14,7 +14,7 @@ A. Arrays.
 B. Linked List.
 
 1. linked list creation and traversal.
-2. insertion linked list with 4 cases.
+2. insertion linked list with 5git  cases.
 3. deletion linked list with 4 cases.
 4. circular linked list with few cases.
 5. doubly linked list with few cases.
@@ -30,8 +30,8 @@ C. Stack.
 6. operations on stack with linkedlist such push, pop and stackTraversal.
 7. other operations on stack with linkedlist such as peek, stacktop and stackbottom.
 8. Parenthesis Matching Problem with stack (application of stack).
-9. Multiple Parenthesis Matching with stack.
-10. Infix to Postfix with stack.
+9. Multiple Parenthesis Matching with stack (application of stack).
+10. Infix to Postfix with stack (application of stack).
 
 D. Queue.
 
@@ -39,7 +39,7 @@ D. Queue.
 2. Circular Queue implementation using arrays and methods like isEmpty, isFull, enqueue and dequeue.
 3. Queue using Linked List.
 
-E. Sorting Alogrithms.
+E. Sorting Algorithms.
 1. Bubble sort.
 2. Insertion sort.
 3. Selection sort.
@@ -58,13 +58,13 @@ F. Trees.
 D. Queue.
 1. DE-Queue (Double Ended Queue using Linked List).
 
-E. Sorting Alogrithms.
+E. Sorting Algorithms.
 
-7. Details about all sorting algos and analysis based on TC, SC, adaptibility, stability and Recursivity.
+7. Details about all sorting algos and analysis based on TC, SC, adaptability, stability and Recursivity.
 
 F. Trees.
 
 5. Binary Search Tree.
 6. Search with Binary Search Tree.
-7. Interative Search with Binary Search Tree.
+7. Iterative Search with Binary Search Tree.
 8. Operations on Binary trees with Linked representation.
