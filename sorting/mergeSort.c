@@ -18,7 +18,7 @@ int merge(int A[], int low, int mid, int high)
     int k = low;
     int B[high + 1]; // high is Size -1. so to make the same size we write high+1.
 
-    // creating the condition of comparisng each one of the values of both the arrays.
+    // creating the condition of comparing each one of the values of both the arrays.
     while (i <= mid && j <= high)
     {
         if (A[i] < A[j])
