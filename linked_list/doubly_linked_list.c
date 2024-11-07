@@ -59,6 +59,23 @@ int deleteAtEnd(struct Node *head)
     return m;
 }
 
+struct Node *insertAtStart(struct Node *head, int val)
+{
+    struct Node *ptr = head;
+    struct Node *n = (struct Node *)malloc(sizeof(struct Node));
+    if (n == NULL)
+    {
+        printf("Overflow, can't insert!\n");
+        return NULL;
+    }
+    n->data = val;
+    n->next = ptr;
+    n->prev = ptr->prev;
+    ptr->prev = n;
+    head = n;
+    return head;
+}
+
 void main()
 {
     struct Node *head = (struct Node *)malloc(sizeof(struct Node));
@@ -76,6 +93,8 @@ void main()
     third->data = 888;
     third->next = NULL;
     third->prev = second;
+
+    head = insertAtStart(head, 22);
 
     linkedListTraversalForward(head);
     printf("\n");
