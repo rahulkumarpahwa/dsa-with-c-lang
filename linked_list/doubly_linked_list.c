@@ -1,46 +1,89 @@
 // we will create doubly linked list with forward and backword traversal and printing values.
-//else commands can be done by self like insertion, deletion and others.
-#include<stdio.h>
-#include<stdlib.h>
+// else commands can be done by self like insertion, deletion and others.
+#include <stdio.h>
+#include <stdlib.h>
 
-struct Node {
+struct Node
+{
     int data;
-    struct Node * next;
-    struct Node * prev;
+    struct Node *next;
+    struct Node *prev;
 };
 
-void linkedListTraversal( struct Node * head){
-struct Node * ptr = head;
+void linkedListTraversalForward(struct Node *head)
+{
+    struct Node *ptr = head;
 
-while(ptr->next != NULL){
+    while (ptr->next != NULL) // forward traversal
+    {
+        printf("Element : %d\n", ptr->data);
+        ptr = ptr->next;
+    }
     printf("Element : %d\n", ptr->data);
-    ptr = ptr->next;
-}
- printf("Element : %d\n", ptr->data);
-while(ptr!= NULL){
-    printf("Element : %d\n", ptr->data);
-    ptr = ptr->prev;
-}
 }
 
-void main(){
- struct Node * head = (struct Node * )malloc(sizeof(struct Node));
- struct Node * second = (struct Node * )malloc(sizeof(struct Node));
- struct Node * third = (struct Node * )malloc(sizeof(struct Node));
+void linkedListTraversalBackward(struct Node *head)
+{
+    struct Node *ptr = head;
+    // first move ptr to the last node
+    if (head != NULL)
+    {
+        ptr = head;
+        while (ptr->next != NULL)
+        {
+            ptr = ptr->next;
+        }
+    }
+    while (ptr != NULL) // backward traversal
+    {
+        printf("Element : %d\n", ptr->data);
+        ptr = ptr->prev;
+    }
+}
 
-head->data = 44;
-head->next = second;
-head->prev= NULL;
+int deleteAtEnd(struct Node *head)
+{
+    struct Node *ptr = head;
+    if (ptr == NULL)
+    {
+        printf("Can't Delete, Underflow!\n");
+        return -1; // considering -1 is not a value of node.
+    }
+    while (ptr->next != NULL)
+    {
+        ptr = ptr->next;
+    }
+    int m = ptr->data;
+    ptr->prev->next = ptr->next; // setting the second last node to NULL
+    free(ptr);
+    return m;
+}
 
-second->data =88;
-second->next = third;
-second->prev = head;
+void main()
+{
+    struct Node *head = (struct Node *)malloc(sizeof(struct Node));
+    struct Node *second = (struct Node *)malloc(sizeof(struct Node));
+    struct Node *third = (struct Node *)malloc(sizeof(struct Node));
 
-third->data = 888;
-third->next = NULL;
-third->prev = second;
+    head->data = 44;
+    head->next = second;
+    head->prev = NULL;
 
-linkedListTraversal(head);
+    second->data = 88;
+    second->next = third;
+    second->prev = head;
 
+    third->data = 888;
+    third->next = NULL;
+    third->prev = second;
 
+    linkedListTraversalForward(head);
+    printf("\n");
+    linkedListTraversalBackward(head);
+    printf("\n");
+    printf("deleted Node : %d \n", deleteAtEnd(head));
+    printf("\n");
+    linkedListTraversalForward(head);
+    printf("\n");
+    linkedListTraversalBackward(head);
 }
