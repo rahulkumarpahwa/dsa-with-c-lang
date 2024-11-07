@@ -18,7 +18,8 @@ B. Linked List.
 3. deletion linked list with 4 cases.
 4. circular linked list with few cases.
 5. doubly linked list with few cases.
-6. Search a value in linked list.
+6. doubly linked list delete at start and forward and backward traversal. 
+7. Search a value in linked list.
 
 C. Stack.
 
