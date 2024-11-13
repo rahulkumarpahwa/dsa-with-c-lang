@@ -56,6 +56,7 @@ F. Trees.
 5. Binary Search Tree.
 6. Search with Binary Search Tree.
 7. Iterative Search with Binary Search Tree.
+8. Insertion on Binary trees with Linked representation.
 
 ## Topics to be covered:
 
@@ -68,5 +69,4 @@ E. Sorting Algorithms.
 
 F. Trees.
 
-8. Insertion on Binary trees with Linked representation.
 9. Deletion on Binary trees with Linked representation.
