@@ -53,7 +53,7 @@ void insertBST(struct Node *root, int val)
 
     // insertion :
 
-    if (val < prev->data)
+    if (val < prev->data) // we will insert on the previous node, either right or left.
     {
         prev->left = n;
     }
