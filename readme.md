@@ -68,5 +68,8 @@ E. Sorting Algorithms.
 
 7. Details about all sorting algos and analysis based on TC, SC, adaptability, stability and Recursivity.
 
+G. Graphs 
 
+1. BFS 
+2. DFS 
 
