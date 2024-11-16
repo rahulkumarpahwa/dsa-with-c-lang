@@ -1,6 +1,6 @@
 // i. Write Programs to demonstrate the concept of recursion
-// • Factorial
-// • Print n Number of Fibonacci series, where n is positive integer from user
+// 1. Factorial
+// 2. Print n Number of Fibonacci series, where n is positive integer from user
 // input
 
 #include <stdio.h>
@@ -21,8 +21,7 @@ int fact(int val)
     return f;
 }
 
-//fibonacci series 
-
+// fibonacci series
 
 void main()
 {
