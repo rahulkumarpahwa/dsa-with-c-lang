@@ -78,5 +78,27 @@ void main()
     printf("\n\n");
     // multiplication :
 
-    
+    int k = 0, sum = 0;
+    for (i = 0; i < r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            for (k = 0; k < c; k++) // here k can be either less than a's column or b's row
+            {
+                sum += a[i][k] * b[k][j];
+            }
+            d[i][j] = sum;
+            sum = 0;
+        }
+    }
+
+    printf("The multiplication of two matrices is : \n");
+    for (i = 0; i < r; i++)
+    {
+        for (j = 0; j < c; j++)
+        {
+            printf("%d  ", d[i][j]);
+        }
+        printf("\n\n");
+    }
 }
