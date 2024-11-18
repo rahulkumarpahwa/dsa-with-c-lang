@@ -72,4 +72,4 @@ G. Graphs
 
 1. BFS 
 2. DFS 
-
+3. Minimum Spanning Tree.
