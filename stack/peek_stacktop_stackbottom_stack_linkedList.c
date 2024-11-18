@@ -84,7 +84,7 @@ int peek(struct Stack *top, int i)
     }
     else
     {
-        for (int j = 0; (j < i - 1 && ptr != NULL); j++) // ptr != NULL so that if ptr moves reach the null then for loop will stop traversing.
+        for (int j = 0; (j < i - 1 && ptr != NULL); j++) // ptr != NULL so that if ptr moves reach the null then for loop will stop traversing. j < i-1 because ptr point to next element already.
         {
             ptr = ptr->next;
         }

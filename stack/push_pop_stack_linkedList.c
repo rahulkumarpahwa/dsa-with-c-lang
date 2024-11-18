@@ -39,7 +39,7 @@ void stackTraversal(struct Stack *top)
     }
 }
 
-// we will push the value at the top as TC is O(1). Similair is for pop.
+// we will push the value at the top as TC is O(1). Similar is for pop.
 struct Stack *push(struct Stack *top, int val)
 {
     struct Stack *ptr = (struct Stack *)malloc(sizeof(struct Stack));
