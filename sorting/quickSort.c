@@ -46,10 +46,10 @@ void quickSort(int A[], int low, int high)
     int partitionIndex;
     if (low < high) // means atleast one value.
     {
-        partitionIndex = partition(A, low, high);
+        partitionIndex = partition(A, low, high); // partition index is the position of the low element after partition.
         // printArray(A, high); // print after every partition.
-        quickSort(A, low, partitionIndex - 1);
-        quickSort(A, partitionIndex + 1, high);
+        quickSort(A, low, partitionIndex - 1); // for left sub-array.
+        quickSort(A, partitionIndex + 1, high); // for right sub-array. 
     }
 }
 

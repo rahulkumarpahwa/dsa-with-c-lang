@@ -11,18 +11,18 @@ void printArray(int *arr, int size)
 
 void insertionSort(int *A, int size)
 {
-    int key; 
+    int key;
     for (int i = 1; i < size; i++)
     { // no. of passes
         printf("No of Passes : %d \n", i);
-        key = A[i]; // key start from the 1st index and goes till end.
-        int j = i-1; // while j start from the i-1th index and goes till it become -1.
-        while (j >= 0 && A[j] > key) 
+        key = A[i];    // key start from the 1st index and goes till end. key is the value to be moved in the sorted part.
+        int j = i - 1; // while j start from the i-1th index and goes till it become -1. j should start from first element so that's why we write the i-1. as i start from one.
+        while (j >= 0 && A[j] > key)
         {
-            A[j+1] = A[j];
-            j--;
+            A[j + 1] = A[j]; // shifting from left to right  
+            j--; // going from back.
         }
-        A[j+1] = key;
+        A[j + 1] = key; // then putting at the last place. 
     }
 }
 
