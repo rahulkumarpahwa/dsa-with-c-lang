@@ -50,16 +50,17 @@ int Dequeue(struct Queue *q)
     else
     {
         q->f++;
-        a = q->arr[q->f];
+        a = q->arr[q->f]; // f is one step before the starting of the array type queue.
     }
     return a;
-} 
+}
 
-void queueTraversal( struct Queue *q){
-    for(int i = q->f+1; i<=q->r; i++){ // f start from the one index before the initial index of array.
+void queueTraversal(struct Queue *q)
+{
+    for (int i = q->f + 1; i <= q->r; i++)
+    { // f start from the one index before the initial index of array.
         printf("Element: %d\n", q->arr[i]);
     }
-
 }
 
 void main()
