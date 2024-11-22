@@ -89,6 +89,40 @@ struct Node *searchIterBST(struct Node *root, int val)
     return NULL;
 }
 
+void insertBST(struct Node *root, int val)
+{
+    struct Node *prev = NULL;
+    while (root != NULL)
+    {
+        prev = root;
+        if (root->data == val)
+        {
+            printf("value is Duplicate! can't insert.");
+            return;
+        }
+        else if (root->data < val)
+        {
+            root = root->left;
+        }
+        else
+        {
+            root = root->right;
+        }
+    }
+
+    struct Node *new = (struct Node *)malloc(sizeof(struct Node));
+    new->data = val;
+    new->left = new->right = NULL;
+    if (prev->data > val)
+    {
+        prev->left = new;
+    }
+    else
+    {
+        prev->right = new;
+    }
+}
+
 void main()
 {
     struct Node *root = createNode(24);
