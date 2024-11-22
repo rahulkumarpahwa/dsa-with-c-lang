@@ -10,6 +10,9 @@ A. Arrays.
 2. insertion arrays with 2 cases.
 3. deletion arrays with 2 cases.
 4. merging of arrays both sorted and un-sorted.
+5. linear search.
+6. binary search.
+7. matrices addition, subtraction and multiplication.
 
 B. Linked List.
 
@@ -59,6 +62,10 @@ F. Trees.
 8. Insertion on Binary trees with Linked representation.
 9. Deletion on Binary trees with Linked representation.
 
+G. Graphs 
+
+1. BFS 
+
 ## Topics to be covered:
 
 D. Queue.
@@ -70,6 +77,7 @@ E. Sorting Algorithms.
 
 G. Graphs 
 
-1. BFS 
 2. DFS 
 3. Minimum Spanning Tree.
+4. Kruskal's Algorithm. 
+
