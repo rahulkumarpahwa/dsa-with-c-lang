@@ -123,6 +123,48 @@ void insertBST(struct Node *root, int val)
     }
 }
 
+struct Node *inOrderPredecessor(struct Node *root)
+{
+    root = root->left;
+    while (root->right != NULL)
+    {
+        root = root->right;
+    }
+    return root;
+}
+
+struct Node *deletionBST(struct Node *root, int val)
+{
+    struct Node *inPrev;
+    // base condition
+    if (root == NULL)
+    {
+        return NULL;
+    }
+    if (root->right == NULL && root->left == NULL)
+    { // reached leaf node
+        free(root);
+        return NULL;
+    }
+
+    // condition:
+    if (root->data > val)
+    {
+        root->left = deletionBST(root->left, val);
+    }
+    else if (root->data < val)
+    {
+        root->right = deletionBST(root->right, val);
+    }
+    else
+    { // when root is found to be deleted.
+        inPrev = inOrderPredecessor(root);
+        root->data = inPrev->data;
+        root->left = deletionBST(root->left, inPrev->data);
+    }
+    return root;
+}
+
 void main()
 {
     struct Node *root = createNode(24);
@@ -156,4 +198,10 @@ void main()
     {
         printf("The value has been found!\n");
     }
+
+    printf("\n\n");
+    struct Node *val = deletionBST(root, 48);
+    printf("%d", val->data);
+    printf("\n");
+    inOrderTraversal(root);
 }
