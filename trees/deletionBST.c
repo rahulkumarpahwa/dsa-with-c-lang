@@ -28,17 +28,16 @@ void inOrderTraversal(struct Node *root)
 struct Node *inOrderPredecessor(struct Node *root)
 {
     root = root->left;
-    while (root->right != NULL) // we are going to most right of the left, until it is null.
+    while (root->right != NULL) // we are going to most right of the left subtree, until right is null of the root, we will return that root.
     {
         root = root->right;
     }
     return root;
 }
 
-struct Node *
-deletionBST(struct Node *root, int val)
+struct Node *deletionBST(struct Node *root, int val)
 {
-    struct Node *iPrev;
+    struct Node *inPrev;
     if (root == NULL)
     {
         return NULL;
@@ -58,9 +57,9 @@ deletionBST(struct Node *root, int val)
     }
     else
     { // when root is equal to the node we want to delete.
-        iPrev = inOrderPredecessor(root);
-        root->data = iPrev->data;
-        root->left = deletionBST(root->left, iPrev->data);
+        inPrev = inOrderPredecessor(root);
+        root->data = inPrev->data;
+        root->left = deletionBST(root->left, inPrev->data);
     }
     return root; // returning root which we are deleting.
 }
