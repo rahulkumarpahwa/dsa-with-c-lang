@@ -15,7 +15,7 @@ int AdjacentMatrix[7][7] = {
 
 void DFS(int i) // i is the source node
 {
-    vistedArray[i] = 1; // setting
+    vistedArray[i] = 1; // setting the source node as visted.
     printf("%d ", i);
     for (int j = 0; j < 7; j++)
     {
