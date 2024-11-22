@@ -64,7 +64,8 @@ F. Trees.
 
 G. Graphs 
 
-1. BFS 
+1. BFS
+2. DFS
 
 ## Topics to be covered:
 
@@ -77,7 +78,6 @@ E. Sorting Algorithms.
 
 G. Graphs 
 
-2. DFS 
 3. Minimum Spanning Tree.
 4. Kruskal's Algorithm. 
 
