@@ -52,6 +52,30 @@ struct Node *insertAtEnd(struct Node *head, int val)
     return head;
 }
 
+struct Node *insertAtIndex(struct Node *head, int val, int index)
+{
+    struct Node *ptr = head;
+    struct Node *n = (struct Node *)malloc(sizeof(struct Node));
+    n->data = val;
+    for (int i = 0; i < index - 1; i++)
+    {
+        ptr = ptr->next;
+    }
+    n->next = ptr->next;
+    ptr->next = n;
+    return head;
+}
+
+struct Node *insertAfterGivenNode(struct Node *head, int val, struct Node *given)
+{
+    struct Node *ptr = head;
+    struct Node *n = (struct Node *)malloc(sizeof(struct Node));
+    n->data = val;
+    n->next = given->next;
+    given->next = n;
+    return head;
+}
+
 struct Node *deleteAtStart(struct Node *head)
 
 {
@@ -66,6 +90,35 @@ struct Node *deleteAtStart(struct Node *head)
     ptr = ptr->next;
     head = ptr;
     printf("Valued deleted at Start : %d\n", a);
+    return head;
+}
+
+struct Node *deleteAtEnd(struct Node *head)
+{
+
+    struct Node *p = head;
+    struct Node *q = head->next;
+    while (q->next != NULL)
+    {
+        p = p->next;
+        q = q->next;
+    }
+    p->next = q->next;
+    free(q);
+    return head;
+}
+
+struct Node *deleteAtIndex(struct Node *head, int index)
+{
+    struct Node *p = head;
+    struct Node *q = head->next;
+
+    for (int i = 0; i < index - 1; i++)
+    {
+        q = q->next;
+    }
+    p->next = q->next;
+    free(q);
     return head;
 }
 
@@ -121,4 +174,23 @@ void main()
     {
         printf("%d does not found!\n", val);
     }
+    printf("\n\n");
+    traversal(head);
+
+    head = insertAtIndex(head, 72, 2); // here 2 is the index not position.
+
+    printf("\n\n");
+    traversal(head);
+
+    head = insertAfterGivenNode(head, 36, head);
+    printf("\n\n");
+    traversal(head);
+
+    head = deleteAtEnd(head);
+    printf("\n\n");
+    traversal(head);
+
+    head = deleteAtIndex(head, 1); // 1 is index here not position
+    printf("\n\n");
+    traversal(head);
 }
